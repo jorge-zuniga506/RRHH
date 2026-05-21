@@ -1,0 +1,210 @@
+export const translations = {
+  es: {
+    appName: "Garnier HR Assistant",
+    subtitle: "Respuestas basadas en políticas oficiales",
+    navChat: "Asistente de Consulta 24/7",
+    navInduction: "Programa de Inducción",
+    navAdmin: "Panel de Administración",
+    
+    // Chat Page
+    chatWelcome: "¡Hola! Soy el asistente virtual de RRHH de Garnier. ¿En qué te puedo ayudar hoy con respecto a nuestras políticas?",
+    chatPlaceholder: "Pregunta sobre vacaciones, teletrabajo, beneficios, permisos...",
+    chatSources: "Documentos fuente consultados:",
+    chatPage: "Pág.",
+    chatEscalateBtn: "Escalar a un agente humano de RH",
+    chatEscalateTitle: "Escalar a Recursos Humanos",
+    chatEscalateDesc: "Si no encontraste la respuesta deseada en nuestras políticas oficiales, ingresa tus datos y un agente de nuestro equipo te contactará directamente por correo.",
+    chatNameLabel: "Nombre completo",
+    chatEmailLabel: "Correo corporativo",
+    chatSubmitEscalate: "Enviar Solicitud de Apoyo",
+    chatEscalatedSuccess: "¡Caso escalado con éxito! Tu ticket de soporte es el #GARN-",
+    chatEscalatedDesc: "Un correo automático ha sido enviado al equipo de RH. Te responderemos a la brevedad.",
+    chatErrorConn: "Error de conexión con el servidor. Por favor asegúrate de que el backend esté corriendo.",
+
+    // Onboarding
+    inductTitle: "Programa de Inducción para Nuevos Colaboradores",
+    inductSubtitle: "Bienvenido a la familia Garnier. Explora esta guía interactiva diseñada especialmente para ti.",
+    inductSlide1Title: "1. ¿Quiénes Somos?",
+    inductSlide1Text: "En Garnier nos esforzamos por liderar el mercado a través de la excelencia y el respeto mutuo. Fomentamos un ambiente de trabajo inclusivo, flexible y transparente que impulsa el crecimiento personal y profesional.",
+    inductSlide1Prompt: "¿Cuál es la misión y cultura de Garnier?",
+    
+    inductSlide2Title: "2. Nuestros Valores Corporativos",
+    inductSlide2Text: "Vivimos bajo cinco pilares esenciales: Integridad, Innovación, Trabajo en Equipo, Orientación al Cliente y Sostenibilidad. Cada acción que tomamos representa estos valores diariamente.",
+    inductSlide2Prompt: "¿Cuáles son los valores corporativos oficiales?",
+    
+    inductSlide3Title: "3. Beneficios Exclusivos para Ti",
+    inductSlide3Text: "Como parte de Garnier, disfrutas de beneficios que cuidan de ti: programa de teletrabajo híbrido, seguro médico complementario, capacitaciones constantes, y el 'Día Libre de Cumpleaños' pagado.",
+    inductSlide3Prompt: "¿Cuáles son los beneficios de bienestar y teletrabajo?",
+    
+    inductQuickBtn: "Preguntar al Asistente",
+    inductProgress: "Paso {step} de {total}",
+
+    // Admin Page
+    adminTitle: "Portal de Control de Recursos Humanos",
+    adminSubtitle: "Gestión de políticas internas, control de consultas y bandeja de escalaciones.",
+    tabDocs: "Gestión de Documentos",
+    tabInbox: "Bandeja de Entrada (HR Inbox)",
+    tabStats: "Estadísticas y Alertas",
+
+    // Admin - Docs
+    docsUploadTitle: "Cargar Nueva Política (PDF)",
+    docsUploadDrop: "Arrastra y suelta tu archivo PDF aquí, o haz clic para buscar",
+    docsUploading: "Indexando y vectorizando PDF... Por favor espera.",
+    docsActiveDocs: "Políticas Activas en el Sistema",
+    docsTableFile: "Archivo",
+    docsTableUploaded: "Cargado el",
+    docsTableChunks: "Páginas Indexadas",
+    docsTableState: "Estado",
+    docsTableActions: "Acciones",
+    docsStateActive: "Activo",
+    docsStateInactive: "Inactivo",
+    docsToggleActive: "Desactivar documento para excluirlo de las búsquedas",
+    docsToggleInactive: "Activar documento para incluirlo en las búsquedas",
+    docsDelete: "Eliminar definitivamente",
+    docsNoDocs: "No hay documentos cargados en el sistema.",
+    docsSyncDriveBtn: "Sincronizar desde Google Drive (Carpeta 'CONSULTAS')",
+    docsSyncingDrive: "Sincronizando con Google Drive... Buscando carpeta 'CONSULTAS' y PDFs nuevos.",
+
+    // Admin - Inbox
+    inboxTitle: "Consultas Escaladas por Funcionarios",
+    inboxDesc: "Casos complejos que requieren intervención de un agente de Recursos Humanos. Se generaron alertas por correo a rh-alertas@garnier.com.",
+    inboxTableId: "ID Ticket",
+    inboxTableUser: "Colaborador",
+    inboxTableEmail: "Correo",
+    inboxTableQuery: "Consulta Pendiente",
+    inboxTableDate: "Creado",
+    inboxTableStatus: "Estado",
+    inboxStatusPending: "Pendiente",
+    inboxStatusResolved: "Resuelto",
+    inboxActionResolve: "Resolver Caso",
+    inboxActionSendMail: "Responder por Correo",
+    inboxNoCases: "¡Excelente! No hay tickets de soporte pendientes por resolver.",
+
+    // Admin - Stats & Alerts
+    statsTitle: "Métricas de Consultas de Garnier HR",
+    statsTotalQueries: "Consultas Totales",
+    statsAnswered: "Resueltas por la IA",
+    statsUnanswered: "Sin Respuesta Encontrada",
+    statsActiveDocsCount: "Documentos Activos",
+    statsTopQueries: "Preguntas Más Frecuentes",
+    statsTopQueriesDesc: "Consultas frecuentes que han sido respondidas de forma exitosa por la IA.",
+    statsQueryText: "Consulta",
+    statsQueryCount: "Veces Realizada",
+    statsUnhandledLogs: "Registro de Consultas sin Respuesta en Políticas",
+    statsUnhandledDesc: "El asistente no pudo contestar estas preguntas. Se requiere atención del equipo para actualizar la documentación.",
+    statsUnhandledTimes: "Veces Preguntada",
+    statsUnhandledNotified: "Alerta Enviada a RH",
+    statsAlertActive: "SÍ (Frecuente > 3)",
+    statsAlertInactive: "NO (Frecuencia baja)",
+    statsNoStats: "No hay datos de interacciones disponibles todavía.",
+    
+    // Alerts Box
+    alertHeader: "🚨 Alertas de Vacíos en Políticas (Email Alerts)",
+    alertDesc: "Las siguientes preguntas no tienen respuesta oficial en los PDFs y han sido consultadas recurrentemente por los colaboradores. El sistema generó alertas automáticas a politicas-rh@garnier.com:",
+    alertNoAlerts: "No hay vacíos críticos de políticas detectados. Todo está cubierto."
+  },
+  en: {
+    appName: "Garnier HR Assistant",
+    subtitle: "Answers based on official policies",
+    navChat: "24/7 Inquiry Assistant",
+    navInduction: "Induction Program",
+    navAdmin: "Admin Dashboard",
+    
+    // Chat Page
+    chatWelcome: "Hello! I am the Garnier virtual HR assistant. How can I help you today regarding our company policies?",
+    chatPlaceholder: "Ask about vacations, hybrid work, benefits, leaves...",
+    chatSources: "Source documents consulted:",
+    chatPage: "Page",
+    chatEscalateBtn: "Escalate to a human HR agent",
+    chatEscalateTitle: "Escalate to Human Resources",
+    chatEscalateDesc: "If you did not find your answer in our official documents, enter your information and a member of our team will contact you directly by email.",
+    chatNameLabel: "Full Name",
+    chatEmailLabel: "Corporate Email",
+    chatSubmitEscalate: "Submit Support Request",
+    chatEscalatedSuccess: "Case successfully escalated! Your support ticket is #GARN-",
+    chatEscalatedDesc: "An automated email has been sent to the HR team. We will get back to you shortly.",
+    chatErrorConn: "Connection error with the server. Please verify the backend is running.",
+
+    // Onboarding
+    inductTitle: "Induction Program for New Collaborators",
+    inductSubtitle: "Welcome to the Garnier family. Explore this interactive onboarding guide made just for you.",
+    inductSlide1Title: "1. Who We Are?",
+    inductSlide1Text: "At Garnier, we strive to lead the market through excellence and mutual respect. We promote an inclusive, flexible, and transparent work environment that drives personal and professional growth.",
+    inductSlide1Prompt: "What is the mission and culture of Garnier?",
+    
+    inductSlide2Title: "2. Our Corporate Values",
+    inductSlide2Text: "We live by five core pillars: Integrity, Innovation, Teamwork, Customer Focus, and Sustainability. Every action we take represents these values daily.",
+    inductSlide2Prompt: "What are the official corporate values?",
+    
+    inductSlide3Title: "3. Exclusive Benefits For You",
+    inductSlide3Text: "As part of Garnier, you enjoy benefits that care for you: hybrid work program, complementary health insurance, constant training, and paid 'Birthday Off'.",
+    inductSlide3Prompt: "What are the wellness and hybrid work benefits?",
+    
+    inductQuickBtn: "Ask the Assistant",
+    inductProgress: "Step {step} of {total}",
+
+    // Admin Page
+    adminTitle: "HR Control Portal",
+    adminSubtitle: "Internal policy management, query controls, and escalation inbox.",
+    tabDocs: "Document Management",
+    tabInbox: "Escalation Inbox (HR Inbox)",
+    tabStats: "Analytics & Alerts",
+
+    // Admin - Docs
+    docsUploadTitle: "Upload New Policy (PDF)",
+    docsUploadDrop: "Drag and drop your PDF file here, or click to browse",
+    docsUploading: "Indexing and vectorizing PDF... Please wait.",
+    docsActiveDocs: "Active System Policies",
+    docsTableFile: "File name",
+    docsTableUploaded: "Uploaded on",
+    docsTableChunks: "Indexed Pages",
+    docsTableState: "State",
+    docsTableActions: "Actions",
+    docsStateActive: "Active",
+    docsStateInactive: "Inactive",
+    docsToggleActive: "Deactivate document to exclude from chat searches",
+    docsToggleInactive: "Activate document to include in chat searches",
+    docsDelete: "Delete permanently",
+    docsNoDocs: "No documents currently loaded in the system.",
+    docsSyncDriveBtn: "Sync from Google Drive ('CONSULTAS' Folder)",
+    docsSyncingDrive: "Syncing with Google Drive... Searching for 'CONSULTAS' folder and new PDFs.",
+
+    // Admin - Inbox
+    inboxTitle: "Employee Escalated Queries",
+    inboxDesc: "Complex cases requiring intervention from an HR agent. Email alerts were sent to rh-alertas@garnier.com.",
+    inboxTableId: "Ticket ID",
+    inboxTableUser: "Employee",
+    inboxTableEmail: "Email",
+    inboxTableQuery: "Pending Query",
+    inboxTableDate: "Created",
+    inboxTableStatus: "Status",
+    inboxStatusPending: "Pending",
+    inboxStatusResolved: "Resolved",
+    inboxActionResolve: "Resolve Case",
+    inboxActionSendMail: "Reply by Email",
+    inboxNoCases: "Excellent! There are no pending support tickets to resolve.",
+
+    // Admin - Stats & Alerts
+    statsTitle: "Garnier HR Query Metrics",
+    statsTotalQueries: "Total Queries",
+    statsAnswered: "Resolved by AI",
+    statsUnanswered: "No Answer Found",
+    statsActiveDocsCount: "Active Documents",
+    statsTopQueries: "Most Frequent Questions",
+    statsTopQueriesDesc: "Popular queries that were answered successfully by the AI chatbot.",
+    statsQueryText: "Query",
+    statsQueryCount: "Times Searched",
+    statsUnhandledLogs: "Unanswered Queries Log (Policy Gaps)",
+    statsUnhandledDesc: "The assistant could not answer these questions. HR attention is needed to update the policies.",
+    statsUnhandledTimes: "Times Asked",
+    statsUnhandledNotified: "HR Notified",
+    statsAlertActive: "YES (Frequent > 3)",
+    statsAlertInactive: "NO (Low Frequency)",
+    statsNoStats: "No interaction data available yet.",
+    
+    // Alerts Box
+    alertHeader: "🚨 Critical Policy Gap Alerts (Email Alerts)",
+    alertDesc: "The following questions have no official answers in the PDFs and have been repeatedly queried by employees. Automated email alerts were sent to politicas-rh@garnier.com:",
+    alertNoAlerts: "No critical policy gaps detected. Everything is covered."
+  }
+};
